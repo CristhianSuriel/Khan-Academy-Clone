@@ -1,1 +1,6 @@
 @use "./cssReset";
+@use "./variables" as var;
+
+.App {
+  border: 5px solid pink;
+}

@@ -1,4 +1,6 @@
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Source+Serif+Pro&display=swap");
 *,
 *::before,
 *::after {
@@ -6,17 +8,22 @@
 }
 
 /* Remove default margin */
-body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+h5,
+h6 {
+  font-family: "Source Serif Pro", serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -31,7 +38,7 @@ html:focus-within {
 }
 
 /* Set core body defaults */
-body {
+.App {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -58,19 +65,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-  *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+.App {
+  border: 5px solid pink;
 }/*# sourceMappingURL=App.css.map */
