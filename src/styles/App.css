@@ -65,6 +65,85 @@ select {
   font: inherit;
 }
 
-.App {
-  border: 5px solid pink;
+.logo-img {
+  display: inline;
+  width: 30px;
+}
+
+.logo-text {
+  font-weight: bold;
+  color: #0b3377;
+  font-size: 1.2em;
+}
+
+.Navbar {
+  border-bottom: 0.5px solid lightgrey;
+}
+
+.nav-link {
+  color: #1865f2 !important;
+  font-weight: bold !important;
+  margin-right: 10px;
+}
+
+.c-dropdown,
+.c-dropdown > .nav-link {
+  display: inline;
+}
+
+#nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#search-bar {
+  display: flex;
+  background-color: #f0f1f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+#search-text {
+  background-color: #f0f1f2;
+  outline: none;
+  border: 0;
+}
+
+#search-text::-moz-placeholder {
+  padding-left: 2px;
+  color: #1b65e9;
+  font-weight: bold;
+}
+
+#search-text:-ms-input-placeholder {
+  padding-left: 2px;
+  color: #1b65e9;
+  font-weight: bold;
+}
+
+#search-text::placeholder {
+  padding-left: 2px;
+  color: #1b65e9;
+  font-weight: bold;
+}
+
+#basic-navbar-nav {
+  flex-grow: 0;
+}
+
+#hamburger {
+  color: #1865f2;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+@media (min-width: 767px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=App.css.map */
